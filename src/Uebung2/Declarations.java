@@ -52,7 +52,19 @@ public class Declarations {
 	// and finally followed by a line feed \n
 	// (no spaces or other symbols than those above!!)
 
-	static String DINGBATS = "";
+	static String DINGBATS = helper();
+
+	private static String helper() {
+		String tmp = "";
+		tmp +=  "\u2798" + "\u2799" + "\u279A" + "\u279B" + "\u279C" + "\u279D" + "\u279E" +"\t" + 
+				"\u279F" + "\u27A0" + "\u27A1" + "\u27A2" + "\u27A3" + "\u27A4" + "\u27A5" +"\t" + 
+				"\u27A6" + "\u27A7" + "\u27A8" + "\u27A9" + "\u27AA" + "\u27AB" + "\u27AC" +"\t" + 
+				"\u27AD" + "\u27AE" + "\u27AF" + "\u27B0" + "\u27B1" + "\u27B2" + "\u27B3" +"\t" + 
+				"\u27B4" + "\u27B5" + "\u27B6" + "\u27B7" + "\u27B8" + "\u27B9" + "\u27BA" +"\t" + 
+				"\u27BB" + "\u27BC" + "\u27BD" + "\u27BE" + "\n";
+
+		return tmp;
+	}
 
 	public static String[][][] theHyperCube() {
 		// TODO: declare, fill and return a 3-dimensional array of size 3x3x3 where
